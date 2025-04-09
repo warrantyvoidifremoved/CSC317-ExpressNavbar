@@ -1,32 +1,26 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
+const path = require("path");
 
-// add any necessary code you'd want to!
-
-//root
-app.get('/', (req, res) => {
-    // your nav bar is on index.html
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))
-})
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Route for Climate Crisis
 app.get("/climate-crisis", (req, res) => {
-  //TODO add code!
+    res.redirect('https://github.com/warrantyvoidifremoved/CSC317-ClimateCrisis')
 });
 
 // Route for Typesetting
 app.get("/typesetting", (req, res) => {
-  //TODO add code
+    res.redirect('https://github.com/warrantyvoidifremoved/CS317-Typesetting')
 });
 
 // Route for Four Algorithms
 app.get("/four-algorithms", (req, res) => {
-  //TODO add code
+    res.redirect('https://github.com/warrantyvoidifremoved/CSC317-FourSortingAlgortihms')
 });
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on http://localhost:${PORT}`);
 });
