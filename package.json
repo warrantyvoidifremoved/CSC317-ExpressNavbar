@@ -19,8 +19,5 @@
   "homepage": "https://github.com/warrantyvoidifremoved/CSC317-ExpressNavbar#readme",
   "dependencies": {
     "express": "^5.1.0"
-  },
-  "engines": {
-    "node": ">=16.0.0"
   }
 }
