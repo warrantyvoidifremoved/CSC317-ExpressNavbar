@@ -38,12 +38,6 @@ body {
     gap: 1rem; /* 16px */
 }
 
-#nav-links li:not(:last-child)::after {
-    content: "|";
-    color: white;
-    margin-left: 1rem; /* 16px */
-}
-
 #nav-links a {
     color: white;
     font-weight: 600;
@@ -54,6 +48,50 @@ body {
 }
 
 #nav-links a:hover {
+    background-color: #749D92;
+}
+
+#nav-links li {
+    position: relative;
+}
+
+#nav-links li:hover #projects {
+    display: block;
+}
+
+#nav-links li::after {
+    content: "";
+    position: absolute;
+    top: 100%;         
+    left: 0;
+    width: 100%;
+    height: 2rem;       
+    pointer-events: auto;
+}
+
+#projects {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-60%, 21%);
+    padding: 0;
+    z-index: 1000;
+    list-style: none;
+    background: #003153;
+    border-radius: 0.5rem;
+}
+
+#projects li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#projects li a:hover {
     background-color: #749D92;
 }
 

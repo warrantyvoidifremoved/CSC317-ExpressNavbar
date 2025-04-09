@@ -6,6 +6,8 @@
         <title>CSC-317: Express Navbar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="desktop.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.webp">
+
     </head>
 
     <body>
@@ -13,16 +15,22 @@
             <div id="title">Express Navbar</div>
 
             <ul id="nav-links">
-                <li><a href="/climate-crisis" target="_blank">Climate Crisis</a></li>
-                <li><a href="/typesetting" target="_blank">Typesetting</a></li>
-                <li><a href="/four-algorithms" target="_blank">Four Algorithms</a></li>
+                <li><a href="/">Home</a></li>
+                <li>
+                    <a href="#">Projects ▾</a>
+                    <ul id="projects">
+                        <li><a href="/climate-crisis" target="_blank">Climate Crisis</a></li>
+                        <li><a href="/typesetting" target="_blank">Typesetting</a></li>
+                        <li><a href="/four-algorithms" target="_blank">Four Algorithms</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
-        <main>  
+        <main>
             <div id="information">
                 <span id="greeting">Welcome!</span>
-                <span id="instruction">Click on one of the links above or one of the images below to visit the corresponding route.</span>
+                <span id="instruction">You can find my projects either in the navbar dropdown above or in the images below.</span>
             </div>
 
             <div id="linksContainer">
@@ -54,8 +62,10 @@
 
                 <div class="social-media">
                     <a href="/x" target="_blank"><img id="X" src="images/X-logo.png" alt="X Logo"></a>
-                    <a href="/instagram" target="_blank"><img id="instagram" src="images/Instagram-logo.png" alt="Instagram Logo"></a>
-                    <a href="/discord" target="_blank"><img id="discord" src="images/Discord-logo.png" alt="Discord Logo"></a>
+                    <a href="/instagram" target="_blank"><img id="instagram" src="images/Instagram-logo.png"
+                            alt="Instagram Logo"></a>
+                    <a href="/discord" target="_blank"><img id="discord" src="images/Discord-logo.png"
+                            alt="Discord Logo"></a>
                 </div>
             </div>
         </footer>
