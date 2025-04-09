@@ -1,5 +1,5 @@
 # CSC-317 Assignment: Express Navbar
-## Deployed link: TBD
+## Deployed link: https://awesome-grand-dragon.glitch.me/
 This repository contains the files for CSC-317 Assignment: Express Navbar, with the final product being a webpage directing users to GitHub repositories that showcase other projects.
 
 ## Design Choices
