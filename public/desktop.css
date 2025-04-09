@@ -52,7 +52,7 @@ body {
 }
 
 /* Content Styles */
-#nav-info {
+#information {
     display: flex;
     position: relative;
     margin-top: 2rem;
