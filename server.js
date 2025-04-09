@@ -21,17 +21,17 @@ app.get("/four-algorithms", (req, res) => {
 });
 
 // Route for X logo
-app.get("/X", (req, res) => {
+app.get("/x", (req, res) => {
     res.redirect('https://x.com/')
 });
 
 // Route for Instagram logo
-app.get("/Instagram", (req, res) => {
+app.get("/instagram", (req, res) => {
     res.redirect('https://www.instagram.com/')
 });
 
 // Route for X logo
-app.get("/Discord", (req, res) => {
+app.get("/discord", (req, res) => {
     res.redirect('https://discord.com/')
 });
 

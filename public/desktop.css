@@ -28,7 +28,6 @@ body {
 
 #title {
     font-family: "Bungee Tint", sans-serif;
-    font-size: normal;;
     font-size: 2rem; /* 32px */
     font-weight: bold;
 }
@@ -56,6 +55,7 @@ body {
 #nav-info {
     display: flex;
     position: relative;
+    margin-top: 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
