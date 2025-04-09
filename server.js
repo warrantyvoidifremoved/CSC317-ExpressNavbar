@@ -5,34 +5,25 @@ const path = require("path");
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Route for Climate Crisis
-app.get("/climate-crisis", (req, res) => {
-    res.redirect('https://github.com/warrantyvoidifremoved/CSC317-ClimateCrisis')
+// Map for routes
+const redirectRoutes = new Map([
+    ["/climate-crisis", "https://github.com/warrantyvoidifremoved/CSC317-ClimateCrisis"],
+    ["/typesetting", "https://github.com/warrantyvoidifremoved/CS317-Typesetting"],
+    ["/four-algorithms", "https://github.com/warrantyvoidifremoved/CSC317-FourSortingAlgortihms"],
+    ["/x", "https://x.com/"],
+    ["/instagram", "https://www.instagram.com/"],
+    ["/discord", "https://discord.com/"]
+]);
+
+redirectRoutes.forEach((url, route) => {
+    app.get(route, (req, res) => {
+        res.redirect(url);
+    });
 });
 
-// Route for Typesetting
-app.get("/typesetting", (req, res) => {
-    res.redirect('https://github.com/warrantyvoidifremoved/CS317-Typesetting')
-});
-
-// Route for Four Algorithms
-app.get("/four-algorithms", (req, res) => {
-    res.redirect('https://github.com/warrantyvoidifremoved/CSC317-FourSortingAlgortihms')
-});
-
-// Route for X logo
-app.get("/x", (req, res) => {
-    res.redirect('https://x.com/')
-});
-
-// Route for Instagram logo
-app.get("/instagram", (req, res) => {
-    res.redirect('https://www.instagram.com/')
-});
-
-// Route for X logo
-app.get("/discord", (req, res) => {
-    res.redirect('https://discord.com/')
+// Catch for undefined endpoints
+app.use((req, res) => {
+    res.status(404).send("404 Not Found");
 });
 
 // Start the server
