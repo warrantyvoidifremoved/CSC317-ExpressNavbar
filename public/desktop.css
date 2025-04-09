@@ -15,9 +15,12 @@ body {
 /* Navbar Styles */
 #navbar {
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
     padding: 0.625rem 1.25rem; /* 10px 20px */
     background: #003153;
     border-radius: 0.5rem; /* 8px */;
@@ -50,14 +53,83 @@ body {
 }
 
 /* Content Styles */
+#instructions {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#linksContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem; /* 20px */
+    padding: 3.125rem 0; /* 50px 0 */
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.links {
+    display: flex;
+    position: relative;
+    background-color: white;
+    min-height: 50rem; /* 800px */
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0.625rem 0.625rem 1.25rem rgba(0, 0, 0, 0.3); /* 10px 10px 20px */
+    border: solid black 0.0625rem; /* 1px */
+    border-radius: 0.5rem; /* 8px */
+    transition: border 0.3s ease-in-out;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 0.5rem; /* 8px */
+    color: black;
+    font-size: 2rem; /* 24px */
+    transition: font-size 0.3s ease-in-out;
+}
+
+.links:hover {
+    border: solid black 0.125rem; /* 2px */
+}
+
+.links:hover .headings{
+    font-size: 2.25rem; /* 28px */
+}
+
+#climate-crisis {
+    background-image: url('./images/climate-crisis.webp');
+}
+
+#typesetting {
+    background-image: url('./images/typesetting.webp');
+}
+
+#four-algorithms {
+    background-image: url('./images/four-algorithms.webp');
+}
+
 #footer {
     display: flex;
     justify-content: space-between;
     padding: 0.625rem 1.25rem; /* 10px 20px */
-    margin: 0 auto;
+    margin: auto;
     border-radius: 0.5rem; /* 8px */
     align-items: center;
-    background: #003153;
+    background-color: #003153;
     color: white;
     font-weight: 600;
 }
