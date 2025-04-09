@@ -20,6 +20,21 @@ app.get("/four-algorithms", (req, res) => {
     res.redirect('https://github.com/warrantyvoidifremoved/CSC317-FourSortingAlgortihms')
 });
 
+// Route for X logo
+app.get("/X", (req, res) => {
+    res.redirect('https://x.com/')
+});
+
+// Route for Instagram logo
+app.get("/Instagram", (req, res) => {
+    res.redirect('https://www.instagram.com/')
+});
+
+// Route for X logo
+app.get("/Discord", (req, res) => {
+    res.redirect('https://discord.com/')
+});
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);

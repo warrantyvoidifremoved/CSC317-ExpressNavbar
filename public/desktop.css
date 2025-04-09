@@ -48,3 +48,26 @@ body {
 #nav-links a:hover {
     background-color: #749D92;
 }
+
+/* Content Styles */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    margin: 0 auto;
+    border-radius: 0.5rem; /* 8px */
+    align-items: center;
+    background: #003153;
+    color: white;
+    font-weight: 600;
+}
+
+.social-media img {
+    margin-left: 1.875rem; /* 30px */
+    max-width: 2rem; /* 32px */
+    max-height: 2rem; /* 32px */
+}
+
+#discord {
+    margin-bottom: 0.1875rem; /* 3px */
+}
