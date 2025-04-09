@@ -53,13 +53,22 @@ body {
 }
 
 /* Content Styles */
-#instructions {
+#nav-info {
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
+}
+
+#greeting {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#instruction {
+    font-style: italic;
 }
 
 #linksContainer {
