@@ -23,7 +23,7 @@ redirectRoutes.forEach((url, route) => {
 
 // Catch for undefined endpoints
 app.use((req, res) => {
-    res.status(404).send("404 Not Found");
+    res.status(404).sendFile(path.join(__dirname, 'public', 'error.html'));
 });
 
 // Start the server
