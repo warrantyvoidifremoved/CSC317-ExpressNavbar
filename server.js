@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 const redirectRoutes = new Map([
     ["/climate-crisis", "https://github.com/warrantyvoidifremoved/CSC317-ClimateCrisis"],
     ["/typesetting", "https://github.com/warrantyvoidifremoved/CS317-Typesetting"],
-    ["/four-algorithms", "https://github.com/warrantyvoidifremoved/CSC317-FourSortingAlgortihms"],
+    ["/four-algorithms", "https://github.com/warrantyvoidifremoved/CSC317-FourSortingAlgorithms"],
     ["/x", "https://x.com/"],
     ["/instagram", "https://www.instagram.com/"],
     ["/discord", "https://discord.com/"]
